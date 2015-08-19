@@ -14,6 +14,8 @@ RSpec.configure do |config|
   # Activate factory girl
   config.include FactoryGirl::Syntax::Methods
 
+  config.include RequestMacros, :type => :request
+
   ###
   # Database handling
   ###
